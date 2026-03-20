@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ── Global ── */
+body {
+  background-color: #1a1a2e;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+/* ── Decade visual effects (applied via effectClass in PolaroidCard) ── */
+
+/* 1950s — high-contrast B&W */
+.effect-1950s {
+  filter: grayscale(100%) contrast(1.3) brightness(1.05);
+}
+
+/* 1960s — faded saturated colours */
+.effect-1960s {
+  filter: saturate(1.6) contrast(0.9) brightness(1.1) sepia(0.15);
+}
+
+/* 1970s — warm/orange colour-shift */
+.effect-1970s {
+  filter: sepia(0.45) saturate(1.4) contrast(0.95) brightness(1.05) hue-rotate(-10deg);
+}
+
+/* 1980s — vivid colours + slight haze */
+.effect-1980s {
+  filter: saturate(1.8) contrast(1.1) brightness(1.05) hue-rotate(5deg);
+}
+
+/* 1990s — slightly faded / washed-out */
+.effect-1990s {
+  filter: saturate(0.85) contrast(0.95) brightness(1.08) sepia(0.1);
+}
+
+/* 2000s — cool blue digital look */
+.effect-2000s {
+  filter: saturate(1.1) contrast(1.05) brightness(1.0) hue-rotate(10deg);
+}
