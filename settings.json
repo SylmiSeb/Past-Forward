@@ -1,0 +1,27 @@
+{
+  "mcpServers": {
+    "wordpress-mcp": {
+      "command": "npx",
+      "args": ["-y", "@automattic/mcp-wordpress-remote@latest"],
+      "env": {
+        "WP_API_URL": "https://sylmi.fr",
+        "JWT_TOKEN": "your-jwt-token-here",
+        "LOG_FILE": "optional-path-to-log-file"
+      }
+    }
+  },
+  "preferences": {
+    "launchPreviewPersistSession": true,
+    "localAgentModeTrustedFolders": [
+      "C:\\Users\\sylmi\\mon site",
+      "C:\\Users\\sylmi\\migration-backup",
+      "C:\\Users\\sylmi\\migration-backup_suite",
+      "C:\\Users\\sylmi\\000_dossiers_test\\copy-of-copy-of-past-forward"
+    ],
+    "coworkScheduledTasksEnabled": true,
+    "ccdScheduledTasksEnabled": true,
+    "sidebarMode": "chat",
+    "bypassPermissionsModeEnabled": true,
+    "coworkWebSearchEnabled": true
+  }
+}
