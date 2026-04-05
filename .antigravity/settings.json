@@ -1,0 +1,63 @@
+{
+  "security": {
+    "strict_mode": false
+  },
+  "artifact": {
+    "review_policy": "agent_decides"
+  },
+  "terminal": {
+    "auto_execution": "request_review",
+    "shell_integration": true,
+    "allow_list": [
+      "git status",
+      "git diff",
+      "git log",
+      "git branch",
+      "git checkout",
+      "git add",
+      "git commit",
+      "npm test",
+      "npm run lint",
+      "npm run build",
+      "npm install",
+      "npx",
+      "python -m pytest",
+      "pip install",
+      "ls",
+      "cat",
+      "pwd",
+      "echo"
+    ],
+    "deny_list": [
+      "rm -rf",
+      "git push --force",
+      "git reset --hard",
+      "docker rm",
+      "sudo",
+      "chmod 777",
+      "DROP TABLE",
+      "curl | sh",
+      "wget | sh"
+    ]
+  },
+  "file_access": {
+    "gitignore_access": false,
+    "non_workspace_access": false,
+    "auto_open_edited_files": true
+  },
+  "automation": {
+    "auto_fix_lints": true
+  },
+  "history": {
+    "conversation_history": true
+  },
+  "knowledge": {
+    "enabled": true
+  },
+  "general": {
+    "explain_fix_current_conversation": true,
+    "open_agent_on_reload": true,
+    "enable_sounds": true,
+    "auto_expand_changes_overview": true
+  }
+}
